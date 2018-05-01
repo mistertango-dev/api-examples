@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>SOME-ID</MsgId>
+			<CreDtTm>2018-04-19T10:31:01.750</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>100.00</CtrlSum>
+			<InitgPty>
+				<Nm>Your Name</Nm>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>PAYMENT-ID</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2018-04-19</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Your Name</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>Your account number</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>MIEGLT21</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<EndToEndId>NOTPROVIDED</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">0.01</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Recipient Name</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>Recipient account number</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Payment details</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>
