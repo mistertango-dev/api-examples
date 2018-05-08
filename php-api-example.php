@@ -6,8 +6,8 @@ MisterTango API PHP wrapper
 Example:
 
 // your api credentials
-$key = 'test-test-test-test-test';
-$secret = 'TeSts';
+$key = 'your-API-key';
+$secret = 'your-API-secret';
 
 $url = 'https://api.mistertango.com:8445';
 $sslverify = true;
