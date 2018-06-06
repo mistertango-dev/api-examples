@@ -108,11 +108,8 @@ class MTapi
     {
         curl_setopt_array($this->curl, array(CURLOPT_POST => true)     );
 		 
-		if(!isset($request['nonce'])) {
-            // generate a 64 bit nonce using a timestamp at microsecond resolution
-            // string functions are used to avoid problems on 32 bit systems
-            $nonce = explode(' ', microtime());
-            $request['nonce'] = $nonce[1] . str_pad(substr($nonce[0], 2, 6), 6, '0');
+        if (!isset($request['nonce'])) {
+            $request['nonce'] = str_replace('.', '', microtime(true));
         }
 
         // build the POST data string
