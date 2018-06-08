@@ -109,7 +109,7 @@ class MTapi
         curl_setopt_array($this->curl, array(CURLOPT_POST => true)     );
 		 
         if (!isset($request['nonce'])) {
-            $request['nonce'] = str_replace('.', '', microtime(true));
+            $request['nonce'] = str_pad(str_replace('.', '', microtime(true)), 18, "0", STR_PAD_RIGHT);
         }
 
         // build the POST data string
