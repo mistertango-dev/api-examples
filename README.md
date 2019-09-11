@@ -1,6 +1,6 @@
 # Mistertango API examples
 
-* [API documentation](https://bank.mistertango.com/api_v1_doc) - official Mistertango API documentation.
+* [API documentation](https://app.swaggerhub.com/apis-docs/mt1/mistertango-public_api/1.0) - official Mistertango API documentation.
 
 
 ### Examples
