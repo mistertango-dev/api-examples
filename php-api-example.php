@@ -9,7 +9,7 @@ Example:
 $key = 'your-API-key';
 $secret = 'your-API-secret';
 
-$url = 'https://api.mistertango.com:8445';
+$url = 'https://publicapi.v2.mistertango.com';
 $sslverify = true;
 
 $mt = new MTapi($key, $secret, $url, $sslverify);
